@@ -18,7 +18,7 @@ Elasmobranchii_tree <- Elasmobranchii %>%
 
 print(Elasmobranchii_tree)
 
-# Convert it back into a data.frame, these are more normal for us to work with
+# Convert it back into a data.frame, more normal to work with
 Elasmobranchii_network <- ToDataFrameNetwork(Elasmobranchii_tree) %>%
   # Include the root name
   bind_rows(tibble(from = NA, to = root))
